@@ -1,0 +1,39 @@
+---
+layout: default
+image: /assets/banner.png
+---
+
+<div id="home" class="bg-light">
+<div class="container pt-5">
+{% capture title %}{% include_relative title.html %}{% endcapture %}
+{{ title | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
+</div>
+</div>
+
+<div class="bg-white">
+<div id="abstract" class="container py-4">
+{% capture abstract %}{% include_relative abstract.html %}{% endcapture %}
+{{ abstract | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
+</div>
+</div>
+
+<div class="bg-light">
+<div id="schedule" class="container py-4">
+{% capture schedule %}{% include_relative schedule.html %}{% endcapture %}
+{{ schedule | remove_first: "---" | remove_first: "published: false" | remove_first: "---" | markdownify }}
+</div>
+</div>
+
+<div class="bg-light">
+<div class="container py-4">
+{% capture organizers %}{% include_relative organizers.html %}{% endcapture %}
+{{ organizers | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
+</div>
+</div>
+
+<div class="bg-light">
+<div class="container py-4">
+{% capture advisory %}{% include_relative advisory.html %}{% endcapture %}
+{{ advisory | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
+</div>
+</div>
