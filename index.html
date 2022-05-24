@@ -18,6 +18,13 @@ image: /assets/banner.png
 </div>
 
 <div class="bg-light">
+<div id="speakers" class="container py-4">
+{% capture speakers %}{% include_relative speakers.html %}{% endcapture %}
+{{ speakers | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
+</div>
+</div>
+
+<div class="bg-white">
 <div id="schedule" class="container py-4">
 {% capture schedule %}{% include_relative schedule.html %}{% endcapture %}
 {{ schedule | remove_first: "---" | remove_first: "published: false" | remove_first: "---" | markdownify }}
@@ -31,7 +38,7 @@ image: /assets/banner.png
 </div>
 </div>
 
-<div class="bg-light">
+<div class="bg-white">
 <div class="container py-4">
 {% capture advisory %}{% include_relative advisory.html %}{% endcapture %}
 {{ advisory | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
