@@ -5,7 +5,6 @@ published: false
 {% assign advisors = "Tamara Broderick<>Carl Henrik Ek<>Seth Flaxman<>Zoubin Ghahramani<>Emtiyaz Khan<>Andreas Krause" | split: "<>" %} 
 {% assign institutions = "MIT<>University of Cambridge<>University of Oxford<>Google Research<>RIKEN<>ETH Zürich" | split: "<>" %}
 {% assign urls = "https://tamarabroderick.com/<>http://carlhenrik.com/<>https://sethrf.com/<>http://mlg.eng.cam.ac.uk/zoubin/<>https://emtiyaz.github.io<>https://las.inf.ethz.ch/krausea" | split: "<>" %}
-{% assign confirmation  = "confirmed<>confirmed<>confirmed<>confirmed<>confirmed<>confirmed" | split: "<>" %}
 
 <h1 class="h2 text-center pt-3 pb-5">Advisory Committee</h1>
 
@@ -16,7 +15,6 @@ published: false
             <img class="img-fluid rounded-circle mb-3 px-5 px-sm-1 px-md-3 px-xl-5" alt="{{ name }}" src="{{ name | downcase | replace: ' ', '-' | prepend: '/assets/advisors/' | relative_url }}.jpg">
             <h2 class="h5 my-1">{{ name }}</h2>
             <h3 class="h6 my-1">{{ institutions[forloop.index0] }}</h3>
-            <h3 class="h6 my-1">({{ confirmation[forloop.index0] }})</h3>
         </a>
     </div>
     {% endfor %}
