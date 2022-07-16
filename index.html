@@ -18,6 +18,20 @@ image: /assets/banner.png
 </div>
 
 <div class="bg-light">
+<div id="deadlines" class="container py-4">
+{% capture deadlines %}{% include_relative deadlines.html %}{% endcapture %}
+{{ deadlines | remove_first: "---" | remove_first: "published: false" | remove_first: "---" | markdownify }}
+</div>
+</div>
+
+<div class="bg-white">
+<div id="callforpapers" class="container py-4">
+{% capture callforpapers %}{% include_relative callforpapers.html %}{% endcapture %}
+{{ callforpapers | remove_first: "---" | remove_first: "published: false" | remove_first: "---" | markdownify }}
+</div>
+</div>
+
+<div class="bg-light">
 <div id="speakers" class="container py-4">
 {% capture speakers %}{% include_relative speakers.html %}{% endcapture %}
 {{ speakers | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
