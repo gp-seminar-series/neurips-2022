@@ -1,4 +1,4 @@
-title: NeurIPS Workshop Proposal on Gaussian Processes, Spatiotemporal Modeling, and Decision-making Systems
+title: NeurIPS Workshop on Gaussian Processes, Spatiotemporal Modeling, and Decision-making Systems
 description: A NeurIPS workshop to bring researchers working in Gaussian processes and related areas together
 markdown: kramdown
 plugins:
@@ -7,7 +7,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 future: true
-short_title: Gaussian Process Workshop Proposal
+short_title: Gaussian Process Workshop
 header_menu:
     -
         title: "Home"
