@@ -26,8 +26,8 @@ image: /assets/banner.png
 
 <div class="bg-white">
 <div id="callforpapers" class="container py-4">
-{% capture callforpapers %}{% include_relative callforpapers.html %}{% endcapture %}
-{{ callforpapers | remove_first: "---" | remove_first: "published: false" | remove_first: "---" | markdownify }}
+{% capture submissions %}{% include_relative submissions.html %}{% endcapture %}
+{{ submissions | remove_first: "---" | remove_first: "published: false" | remove_first: "---" | markdownify }}
 </div>
 </div>
 
