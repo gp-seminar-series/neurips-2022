@@ -3,7 +3,7 @@ published: false
 ---
 
 {% assign speakers = "Marta Blangiardo<>Viacheslav Borovitskiy<>Jacob Gardner<>Paula Moraga<>Jasper Snoek<>Carolina Osorio" | split: "<>" %} 
-{% assign institutions = "Imperial College London<>ETH Zürich<>University of Pennsylvania<>KAUST<>Google Research<>HEC Montréal" | split: "<>" %}
+{% assign institutions = "Imperial College London<>ETH Zürich<>University of Pennsylvania<>KAUST<>Google Research<>HEC Montréal and Google Research" | split: "<>" %}
 {% assign urls = "https://www.imperial.ac.uk/people/m.blangiardo<>http://vab.im/<>https://jacobrgardner.github.io/<>https://www.paulamoraga.com/<>https://research.google/people/JasperSnoek/<>https://www.carolinaosorio.net/" | split: "<>" %}
 
 <h1 class="h2 text-center pt-3 pb-5">Speakers</h1>
@@ -11,7 +11,7 @@ published: false
 <div class="row justify-content-center text-center">
     {% for name in speakers %}
     <div class="col-12 col-sm-3 mx-1 mb-5">
-        <a class="link-dark text-decoration-none" href="{{ urls[forloop.index0] }}">
+        <a class="link-dark" href="{{ urls[forloop.index0] }}">
             <img class="img-fluid rounded-circle mb-3 px-5 px-sm-1 px-md-3 px-xl-5" alt="{{ name }}" src="{{ name | downcase | replace: ' ', '-' | prepend: '/assets/speakers/' | relative_url }}.jpg">
             <h2 class="h5 my-1">{{ name }}</h2>
             <h3 class="h6 my-1">{{ institutions[forloop.index0] }}</h3>
