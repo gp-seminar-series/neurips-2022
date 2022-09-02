@@ -58,3 +58,10 @@ image: /assets/banner.png
 {{ advisory | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
 </div>
 </div>
+
+<div class="bg-light">
+<div class="container py-4">
+{% capture sponsors %}{% include_relative sponsors.html %}{% endcapture %}
+{{ sponsors | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
+</div>
+</div>
