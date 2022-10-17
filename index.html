@@ -25,23 +25,23 @@ image: /assets/banner.png
 </div>
 
 <div class="bg-white">
-<div id="callforpapers" class="container py-4">
-{% capture submissions %}{% include_relative submissions.html %}{% endcapture %}
-{{ submissions | remove_first: "---" | remove_first: "published: false" | remove_first: "---" | markdownify }}
-</div>
-</div>
-
-<div class="bg-light">
 <div id="speakers" class="container py-4">
 {% capture speakers %}{% include_relative speakers.html %}{% endcapture %}
 {{ speakers | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
 </div>
 </div>
 
-<div class="bg-white">
+<div class="bg-light">
 <div id="schedule" class="container py-4">
 {% capture schedule %}{% include_relative schedule.html %}{% endcapture %}
 {{ schedule | remove_first: "---" | remove_first: "published: false" | remove_first: "---" | markdownify }}
+</div>
+</div>
+
+<div class="bg-white">
+<div id="papers" class="container py-4">
+{% capture papers %}{% include_relative papers.html %}{% endcapture %}
+{{ papers | remove_first: "---" | remove_first: "published: false" | remove_first: "---" | markdownify }}
 </div>
 </div>
 
