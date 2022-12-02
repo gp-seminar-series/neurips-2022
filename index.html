@@ -18,48 +18,41 @@ image: /assets/banner.png
 </div>
 
 <div class="bg-light">
-<div id="deadlines" class="container py-4">
-{% capture deadlines %}{% include_relative deadlines.html %}{% endcapture %}
-{{ deadlines | remove_first: "---" | remove_first: "published: false" | remove_first: "---" | markdownify }}
-</div>
-</div>
-
-<div class="bg-white">
 <div id="speakers" class="container py-4">
 {% capture speakers %}{% include_relative speakers.html %}{% endcapture %}
 {{ speakers | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
 </div>
 </div>
 
-<div class="bg-light">
+<div class="bg-white">
 <div id="schedule" class="container py-4">
 {% capture schedule %}{% include_relative schedule.html %}{% endcapture %}
 {{ schedule | remove_first: "---" | remove_first: "published: false" | remove_first: "---" | markdownify }}
 </div>
 </div>
 
-<div class="bg-white">
+<div class="bg-light">
 <div id="papers" class="container py-4">
 {% capture papers %}{% include_relative papers.html %}{% endcapture %}
 {{ papers | remove_first: "---" | remove_first: "published: false" | remove_first: "---" | markdownify }}
 </div>
 </div>
 
-<div class="bg-light">
+<div class="bg-white">
 <div class="container py-4">
 {% capture organizers %}{% include_relative organizers.html %}{% endcapture %}
 {{ organizers | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
 </div>
 </div>
 
-<div class="bg-white">
+<div class="bg-light">
 <div class="container py-4">
 {% capture advisory %}{% include_relative advisory.html %}{% endcapture %}
 {{ advisory | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
 </div>
 </div>
 
-<div class="bg-light">
+<div class="bg-white">
 <div class="container py-4">
 {% capture sponsors %}{% include_relative sponsors.html %}{% endcapture %}
 {{ sponsors | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
