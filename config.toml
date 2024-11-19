@@ -4,6 +4,7 @@ build_search_index = false
 generate_feeds = false
 minify_html = true
 theme = "academic-workshop"
+ignored_static = ["sponsorship_prospectus.pdf"]
 
 [markdown]
 highlight_code = false
