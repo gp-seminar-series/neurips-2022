@@ -148,6 +148,7 @@ We invite researchers to submit extended abstracts for contributed talks and pos
 
 {{ table(
     data = "papers.csv", 
+    columns = ["Title","Authors"],
     button_names = ["paper","poster"], 
     button_data_columns = [2,3], 
     button_output_columns = [1,1]) }}
